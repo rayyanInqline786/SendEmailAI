@@ -24,7 +24,7 @@ app.post('/sendemail', (req, res) => {
     
     let mailOptions = {
         from:"sales@inqline.com",
-        to:'rayyan@inqline.com',
+        to:'sales@inqline.com, ron@inqline.com',
         subject:`New Request for Invite Received from ${req.body.email} on AI.Inqline`,
         // text:req.body.text
         html:`<p>A new request for a demo is received from ${req.body.fname} ${req.body.lname}</p>
